@@ -23,9 +23,9 @@
 
 ### ⚙️ 주요 기능 구현
 
-- [ ] `DevLog` 기본 구현 (태그 기반 로그 출력)
-- [ ] ANSI 컬러 + 호출 위치 포함 출력
-- [ ] `@Profiled` 어노테이션 구현 (Spring AOP)
+- [x] `DevLog` 기본 구현 (태그 기반 로그 출력)
+- [x] ANSI 컬러 + 호출 위치 포함 출력
+- [x] `@Profiled` 어노테이션 구현 (Spring AOP)
 - [ ] 실행 시간 측정 및 threshold 조건부 출력
 - [ ] `spring.profiles.active` 기반 로그 출력 제어
 - [ ] 로그 통계 수집 기능 (`LogSummary`)
