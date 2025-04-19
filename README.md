@@ -75,3 +75,35 @@
 - [ ] 리뷰 요청 시 `Needs Review` 코멘트 추가
 - [ ] 리뷰 완료 후 `Reviewed` 상태 확인
 - [ ] 퍼블리싱 완료 후 `Published` 라벨 확인
+
+
+src/
+└── main/
+├── java/
+│   └── com/
+│       └── library/
+│           └── devpulse/
+│               ├── DevpulseApplication.java
+│               │
+│               ├── domain/             ← 🟩 Entity 클래스
+│               │   └── User.java
+│               │
+│               ├── dto/                ← 🟦 요청/응답 DTO
+│               │   └── UserDto.java
+│               │
+│               ├── repository/         ← 🟨 JpaRepository
+│               │   └── UserRepository.java
+│               │
+│               ├── service/            ← 🟧 비즈니스 로직
+│               │   └── UserService.java
+│               │
+│               ├── controller/         ← 🟥 REST API
+│               │   └── UserController.java
+│               │
+│               ├── annotation/         ← @Profiled 어노테이션
+│               ├── aspect/             ← AOP 로직
+│               └── logging/            ← DevLog 로거 유틸
+│
+└── resources/
+├── application.yml                ← Hibernate 설정 포함
+└── schema.sql                     ← (선택) 초기 테이블 생성 SQL
